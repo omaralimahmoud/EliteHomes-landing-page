@@ -1,0 +1,55 @@
+@font-face {
+    src: url(../fonts/Exo-VariableFont_wght.ttf);
+    font-family: Exo;
+}
+
+body {
+    font-family: Exo;
+
+}
+
+/* :root {} */
+/* start navbar */
+.navbar-brand {
+    color: #1d293d;
+}
+
+
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+    color: #1d293d;
+}
+
+.nav-link {
+    color: #314158;
+    font-weight: 500;
+}
+.navbar-nav .nav-link::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #7C3AED;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+
+}
+.nav-link:focus,
+.nav-link:hover {
+     color: #7C3AED;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: #7C3AED;
+}
+.dropdown-toggle::after {
+    border: none;
+    content: "";
+}
+ /* end navbar */
+
