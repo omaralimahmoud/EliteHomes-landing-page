@@ -23,8 +23,8 @@
 </head>
 
 <body>
-    
-    <nav class="navbar navbar-expand-lg bg-light py-3 fixed-top">
+
+    <nav class="navbar  navbar-expand-lg bg-white py-3 fixed-top">
         <div class="container">
             <a class="navbar-brand fs-4 fw-bold " href="#">EliteHomes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -35,14 +35,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto gap-4 mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link position-relative active fs-6 fw-semibold" aria-current="page" href="#Home">Home</a>
+                        <a class="nav-link position-relative active fs-6 fw-semibold" aria-current="page"
+                            href="#Home">Home</a>
                     </li>
-                 
+
                     <li class="nav-item dropdown">
-                        <a class="nav-link position-relative fs-6 dropdown-toggle" href="Properties" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Properties 
-                          <span><i class="fa-solid fa-chevron-down fa-2xs"></i></span>
+                        <a class="nav-link position-relative fs-6 dropdown-toggle" href="Properties" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Properties
+                            <span><i class="fa-solid fa-chevron-down fa-2xs"></i></span>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -53,7 +54,7 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
-                  <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link position-relative fs-6" href="#Services">Services</a>
                     </li>
                     <li class="nav-item">
@@ -62,15 +63,142 @@
                     <li class="nav-item">
                         <a class="nav-link position-relative fs-6" href="#FAQ">FAQ</a>
                     </li>
-                       <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link  position-relative fs-6" href="#Contact">Contact</a>
                     </li>
                 </ul>
-              
+
             </div>
         </div>
     </nav>
 
+    <header class="min-vh-100 ">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="header-content p-2  ">
+                <div class="header-heading  mx-auto px-3 second-main-color text-center ">
+                    <h1 class="display-3 fw-bold mb-4">Find Your Dream Home</h1>
+                    <p class="fs-4 pb-5 fw-normal lh-lg lead">Discover exceptional properties in prime locations. From
+                        modern
+                        condos to luxury estates, we help you find the perfect place to call home.</p>
+                </div>
+
+                <div class="properties-form bg-light p-3 px-md-5 py-md-5 shadow-lg mb-5 text-center rounded-4">
+                    <form action="">
+                        <div class="row g-3 py-2">
+                            <div class="col-lg-6">
+                                <label for="cityInput" class="form-label">Location</label>
+                                <div class="position-relative inner ">
+
+                                    <i class="fa-solid fa-location-dot position-absolute top-50 start-0 translate-middle-y ms-3 "
+                                        style="color: #99a1af;"></i>
+                                    <input type="text" id="cityInput"
+                                        class="form-control form-control-header-form ps-5 pe-5  rounded-3"
+                                        placeholder="Enter city, neighborhood, or ZIP code" aria-label="City">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="form-label" for="specificSizeSelect">Property Type</label>
+                                <select class="form-select form-control-header-form" id="specificSizeSelect">
+                                    <option selected>All Types</option>
+                                    <option value="House">House</option>
+                                    <option value="Apartment">Apartment</option>
+                                    <option value="Townhouse">Townhouse</option>
+                                </select>
+                            </div>
+                            <div class="  col-lg-3">
+                                <label class="form-label" for="specificSizeSelect">Price Range</label>
+                                <select class="form-select form-control-header-form" id="specificSizeSelect">
+                                    <option selected>Any Price</option>
+                                    <option value="$0 - $500K">$0 - $500K</option>
+                                    <option value="$500K - $1M">$500K - $1M</option>
+                                    <option value="$1M - $2M">$1M - $2M</option>
+                                    <option value="$2M+">$2M+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class=" row g-3 p-1">
+                            <div class=" col-6  col-sm-6  col-lg-3 ">
+                                <label class="form-label" for="specificSizeSelect">Bedrooms</label>
+                                <select class="form-select form-control-header-form" id="specificSizeSelect">
+                                    <option selected>Any</option>
+                                    <option value="1+">1+</option>
+                                    <option value="2">2+</option>
+                                    <option value="3+">3+</option>
+                                    <option value="4+">4+</option>
+                                    <option value="5+">5+</option>
+                                </select>
+                            </div>
+                            <div class="col-6  col-sm-6  col-lg-3 ">
+                                <label class="form-label" for="specificSizeSelect">Bathrooms</label>
+                                <select class="form-select form-control-header-form" id="specificSizeSelect">
+                                    <option selected>Any</option>
+                                    <option value="1+">1+</option>
+                                    <option value="2">2+</option>
+                                    <option value="3+">3+</option>
+                                    <option value="4+">4+</option>
+                                    <option value="5+">5+</option>
+                                </select>
+                            </div>
+                            <div class="col-6  col-sm-6 col-lg-3">
+                                <label for="exampleDataList" class="form-label">Min Sq Ft</label>
+                                <input type="number" class="form-control form-control-header-form" placeholder="0"
+                                    aria-label="Min Sq Ft">
+                            </div>
+                            <div class=" col-6 col-sm-6  col-lg-3">
+                                <label for="exampleDataList" class="form-label">Max Sq Ft</label>
+                                <input type="number" class="form-control form-control-header-form" placeholder="0"
+                                    aria-label="Max Sq Ft">
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2 mt-3">
+
+                            <button class="btn fs-5 fw-semibold  main-bg shadow-lg py-3 rounded-3 text-light"
+                                type="button">
+                                <span class="me-2 "><i class="fa-solid fa-magnifying-glass"></i></span>
+
+                                Search Properties
+
+                            </button>
+
+                        </div>
+                    </form>
+                </div>
+
+                <div class="Experience text-center  ">
+                    <div class="row g-5">
+                        <div class="col-6  col-sm-6 col-md-6  col-lg-3">
+                            <div class="inner ">
+                                <div class="fw-bold fs-2 lh-lg second-main-color">15,000+</div>
+                                <div class=" fs-6 fw-normal lh-base second-main-color">Active Listings</div>
+                            </div>
+                        </div>
+
+                        <div class="col-6  col-sm-6 col-md-6 col-lg-3">
+                            <div class="inner ">
+                                <div class="fw-bold fs-2 lh-lg second-main-color">98%</div>
+                                <div class=" fs-6 fw-normal lh-base second-main-color">Client Satisfaction</div>
+                            </div>
+                        </div>
+                        <div class=" col-6  col-sm-6 col-md-6  col-lg-3">
+                            <div class="inner ">
+                                <div class="fw-bold fs-2 lh-lg second-main-color">500+</div>
+                                <div class=" fs-6 fw-normal lh-base second-main-color">Expert Agents</div>
+                            </div>
+                        </div>
+                        <div class="col-6  col-sm-6 col-md-6  col-lg-3">
+                            <div class="inner  ">
+                                <div class="fw-bold fs-2 lh-lg second-main-color">25</div>
+                                <div class=" fs-6 fw-normal lh-base second-main-color">Years Experience</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </header>
 
 
 

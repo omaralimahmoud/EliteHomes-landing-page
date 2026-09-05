@@ -1,10 +1,7 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
-    .nav-link {
-   background-color: red !important;
-   
-}
+   /* start navbar */
     .navbar-nav .nav-link:hover::after {
         transform: scaleX(0);
         -webkit-transform: scaleX(0);
@@ -21,7 +18,7 @@
         -ms-transform: scaleX(0);
         -o-transform: scaleX(0);
     }
-
+   /* End navbar */
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -29,8 +26,8 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+     /* Start navbar */
     .navbar-nav .nav-link:hover::after {
-
         transform: scaleX(1);
         -webkit-transform: scaleX(1);
         -moz-transform: scaleX(1);
@@ -46,7 +43,27 @@
         -ms-transform: scaleX(1);
         -o-transform: scaleX(1);
     }
+    /* End navbar */
+    /*  Start header */
+    .header-heading {
+        width: 100%;
+        max-width: 80%;
+        margin-inline: auto;
+    }
 
+    .properties-form {
+        width: 100%;
+        max-width: 80%;
+        margin-inline: auto;
+    }
+
+    .Experience {
+        width: 100%;
+        max-width: 80%;
+        margin-inline: auto;
+    }
+
+   /* End  header */
 }
 
 /* X-Large devices (large desktops, 1200px and up) */

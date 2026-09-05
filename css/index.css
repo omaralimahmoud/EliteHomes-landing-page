@@ -2,19 +2,40 @@
     src: url(../fonts/Exo-VariableFont_wght.ttf);
     font-family: Exo;
 }
-
+/* start general style  */
 body {
     font-family: Exo;
-
+    padding-top: 76px;
 }
 
-/* :root {} */
+body::selection {
+    background-color: #7C3AED;
+    color: white;
+}
+
+:root {
+    --second-main-color: white;
+    --main-bg: #871FFD;
+    --bg-white: white
+}
+
+.second-main-color {
+    color: var(--second-main-color);
+}
+
+.bg-white {
+    background-color: var(--bg-white);
+}
+
+.main-bg {
+    background-color: var(--main-bg);
+}
+/* End general style   */
+
 /* start navbar */
 .navbar-brand {
     color: #1d293d;
 }
-
-
 
 .navbar-brand:focus,
 .navbar-brand:hover {
@@ -25,6 +46,7 @@ body {
     color: #314158;
     font-weight: 500;
 }
+
 .navbar-nav .nav-link::after {
     content: "";
     width: 100%;
@@ -38,18 +60,46 @@ body {
     transition: transform 0.3s ease;
 
 }
+
 .nav-link:focus,
 .nav-link:hover {
-     color: #7C3AED;
+    color: #7C3AED;
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .show>.nav-link {
     color: #7C3AED;
 }
+
 .dropdown-toggle::after {
     border: none;
     content: "";
 }
- /* end navbar */
 
+/* end navbar */
+/* ------------------------------------------------------------------------------- */
+
+/* start header */
+header {
+    background-image: linear-gradient(rgba(124, 58, 237, 0.5), rgba(124, 58, 237, 0.5)), url(../images/hero-bg-img.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.form-control-header-form:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #8e51ff;
+    outline: 2px solid #8e51ff;
+    ;
+    outline-offset: 2px;
+    box-shadow: 0 0 0.5rem .25rem rgba(142, 81, 255, 0.5);
+}
+
+.btn:hover {
+
+    background-color: #8200db;
+
+}
+
+/* end header */
