@@ -2,6 +2,7 @@
     src: url(../fonts/Exo-VariableFont_wght.ttf);
     font-family: Exo;
 }
+
 /* start general style  */
 body {
     font-family: Exo;
@@ -16,6 +17,7 @@ body::selection {
 :root {
     --second-main-color: white;
     --main-bg: #871FFD;
+    --main-color: #7f22fe;
     --bg-white: white
 }
 
@@ -27,9 +29,14 @@ body::selection {
     background-color: var(--bg-white);
 }
 
+.main-color {
+    color: var(--main-color);
+}
+
 .main-bg {
     background-color: var(--main-bg);
 }
+
 /* End general style   */
 
 /* start navbar */
@@ -103,3 +110,151 @@ header {
 }
 
 /* end header */
+/* ------------------------------------------------------------------------------------ */
+
+/*  start Premium Collection */
+/* start Premium Collection */
+.Premium-Collection {
+    background-color: #F9FAFB;
+}
+
+.Premium-pill::before,
+.Premium-pill::after {
+    content: "";
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.Premium-pill::before {
+    left: -45%;
+    background: linear-gradient(to right, transparent, #7f22fe 70%);
+}
+
+.Premium-pill::after {
+    right: -45%;
+    background: linear-gradient(to left, transparent, #7f22fe 70%);
+}
+
+.Premium-pill {
+    color: #7008e7;
+    border: 2px solid #ddd6ff;
+}
+
+.Premium-heading p {
+    color: #4a5565;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #9810FA, #EB914E);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.image-card {
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.image-card img {
+    object-fit: cover;
+    cursor: pointer;
+    height: 256px;
+    transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+}
+
+.image-card img:hover {
+    transform: scale(1.10);
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    -o-transform: scale(1.10);
+}
+
+.small-card-image img {
+    width: 50px;
+    height: 50px;
+}
+
+.property-info-main-color {
+    color: #4a5565;
+}
+
+.Price-part {
+    color: #6a7282;
+}
+
+.btn-Schedule {
+    background-color: #ede9fe;
+    color: #7f22fe;
+    font-weight: 500;
+    font-size: .875rem;
+}
+
+.btn-Schedule:hover {
+    background-color: #ede9fe;
+    color: #7f22fe;
+}
+
+.inner-card {
+    box-shadow: 0 10px 15px -3px #0000001a;
+    border-bottom-right-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+    overflow: hidden;
+}
+
+
+.Featured-pill {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding-block: .125rem;
+
+}
+
+.Photos-pill {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    padding-block: .125rem;
+}
+
+.heart-pill {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding-inline: .4375rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #4a5565;
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+}
+
+
+.heart-pill:hover {
+    color: red;
+}
+
+.New {
+    background-color: #00A63E;
+}
+
+.Drop {
+    background-color: #E17100;
+}
+
+/* End Premium Collection */
