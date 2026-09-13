@@ -107,8 +107,8 @@
                                 </select>
                             </div>
                             <div class="  col-lg-3">
-                                <label class="form-label" for="specificSizeSelect">Price Range</label>
-                                <select class="form-select form-control-header-form" id="specificSizeSelect">
+                                <label class="form-label" for="PriceRange">Price Range</label>
+                                <select class="form-select form-control-header-form" id="PriceRange">
                                     <option selected>Any Price</option>
                                     <option value="$0 - $500K">$0 - $500K</option>
                                     <option value="$500K - $1M">$500K - $1M</option>
@@ -119,8 +119,8 @@
                         </div>
                         <div class=" row g-3 p-1">
                             <div class=" col-6  col-sm-6  col-lg-3 ">
-                                <label class="form-label" for="specificSizeSelect">Bedrooms</label>
-                                <select class="form-select form-control-header-form" id="specificSizeSelect">
+                                <label class="form-label" for="Bedrooms">Bedrooms</label>
+                                <select class="form-select form-control-header-form" id="Bedrooms">
                                     <option selected>Any</option>
                                     <option value="1+">1+</option>
                                     <option value="2">2+</option>
@@ -130,8 +130,8 @@
                                 </select>
                             </div>
                             <div class="col-6  col-sm-6  col-lg-3 ">
-                                <label class="form-label" for="specificSizeSelect">Bathrooms</label>
-                                <select class="form-select form-control-header-form" id="specificSizeSelect">
+                                <label class="form-label" for="Bathrooms">Bathrooms</label>
+                                <select class="form-select form-control-header-form" id="Bathrooms">
                                     <option selected>Any</option>
                                     <option value="1+">1+</option>
                                     <option value="2">2+</option>
@@ -141,14 +141,14 @@
                                 </select>
                             </div>
                             <div class="col-6  col-sm-6 col-lg-3">
-                                <label for="exampleDataList" class="form-label">Min Sq Ft</label>
+                                <label for="Min" class="form-label">Min Sq Ft</label>
                                 <input type="number" class="form-control form-control-header-form" placeholder="0"
-                                    aria-label="Min Sq Ft">
+                                    aria-label="Min Sq Ft" id="Min">
                             </div>
                             <div class=" col-6 col-sm-6  col-lg-3">
-                                <label for="exampleDataList" class="form-label">Max Sq Ft</label>
+                                <label for="Max" class="form-label">Max Sq Ft</label>
                                 <input type="number" class="form-control form-control-header-form" placeholder="0"
-                                    aria-label="Max Sq Ft">
+                                    aria-label="Max Sq Ft" id="Max">
                             </div>
                         </div>
                         <div class="d-grid gap-2 mt-3">
@@ -209,7 +209,7 @@
                     Collection</span>
             </div>
             <div class="Premium-heading text-center mt-4">
-                <h2 class="h1 fw-bolder lh-lg">Featured
+                <h2 class="h1 fw-bolder main-color lh-lg">Featured
                     <span class="gradient-text">Properties</span>
                 </h2>
                 <p class=" lead mx-auto mb-4">Discover our handpicked selection of premium properties in the most
@@ -220,7 +220,7 @@
                     <div class="inner h-100">
                         <div class="inner-card h-100 d-flex flex-column ">
                             <div class="image-card position-relative ">
-                                <img src="./images/featured-properties-img-1.png" class="w-100 " alt="...">
+                                <img src="./images/featured-properties-img-1.png" class="w-100 " alt="John Mitchell">
                                 <span class="Featured-pill main-bg text-light px-3 rounded-5  ">Featured</span>
                                 <span class="Photos-pill px-2 text-light rounded-5 bg-danger">
                                     <span class=""><i class="fa-solid fa-camera" style="color: white;"></i></span>
@@ -266,7 +266,7 @@
                     <div class="inner h-100  ">
                         <div class="inner-card h-100 d-flex flex-column">
                             <div class="image-card position-relative ">
-                                <img src="./images/featured-properties-img-2.png" class="w-100 " alt="...">
+                                <img src="./images/featured-properties-img-2.png" class="w-100 " alt="Emily Rodriguez">
                                 <span class="Featured-pill New text-light px-3 rounded-5  ">New Listing</span>
                                 <span class="Photos-pill px-2 text-light rounded-5 bg-danger">
                                     <span class=""><i class="fa-solid fa-camera" style="color: white;"></i></span>
@@ -312,7 +312,7 @@
                     <div class="inner  h-100 ">
                         <div class="inner-card h-100 d-flex flex-column ">
                             <div class="image-card position-relative ">
-                                <img src="./images/featured-properties-img-3.png" class="w-100 " alt="...">
+                                <img src="./images/featured-properties-img-3.png" class="w-100 " alt="Michael Chen">
                                 <span class="Featured-pill Drop main-bg text-light px-3 rounded-5  ">Price Drop</span>
                                 <span class="Photos-pill px-2 text-light rounded-5 bg-danger">
                                     <span class=""><i class="fa-solid fa-camera" style="color: white;"></i></span>
@@ -361,6 +361,971 @@
         </div>
     </section>
     <!-- End Premium-Collection-section  -->
+    <!-- start Services-section -->
+    <section class="Services p-lg-5  bg-white">
+
+        <div class="container py-5">
+            <div class=" text-center d-flex justify-content-center">
+                <span class="position-relative  Premium-pill fw-bold fs-6 bg-light  px-4 py-2 rounded-5">
+                    What We Offer</span>
+            </div>
+            <div class="Premium-heading text-center mt-4">
+                <h2 class="h1 fw-bolder main-color lh-lg">Our
+                    <span class="gradient-text">Services</span>
+                </h2>
+                <p class=" lead mx-auto mb-4">Comprehensive real estate solutions tailored to your needs
+                </p>
+            </div>
+            <ul class="nav nav-pills py-5 row row-cols-2 g-1  row-cols-sm-4 row-cols-md-5 mx-0 justify-content-center mb-3"
+                id="pills-tab" role="tablist">
+                <li class="nav-item fs-6 fw-semibold col" role="presentation">
+                    <button class="nav-link w-100  active" id="pills-Buying-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-Buying" type="button" role="tab" aria-controls="pills-Buying"
+                        aria-selected="true">Buying</button>
+                </li>
+                <li class="nav-item col" role="presentation">
+                    <button class="nav-link w-100 " id="pills-Selling-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-Selling" type="button" role="tab" aria-controls="pills-Selling"
+                        aria-selected="false">Selling</button>
+                </li>
+                <li class="nav-item col" role="presentation">
+                    <button class="nav-link w-100 " id="pills-Renting-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-Renting" type="button" role="tab" aria-controls="pills-Renting"
+                        aria-selected="false">Renting</button>
+                </li>
+                <li class="nav-item  col" role="presentation">
+                    <button class="nav-link w-100 " id="pills-Investing-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-Investing" type="button" role="tab" aria-controls="pills-Investing"
+                        aria-selected="false">Investing
+                    </button>
+                </li>
+                <li class="nav-item  col" role="presentation">
+                    <button class="nav-link w-100" id="pills-Commercial-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-Commercial" type="button" role="tab" aria-controls="pills-Commercial"
+                        aria-selected="false">Commercial</button>
+                </li>
+
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-Buying" role="tabpanel"
+                    aria-labelledby="pills-Buying-tab" tabindex="0">
+
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="inner">
+
+                                <div class="home-heading mb-4">
+                                    <h3 class="fourth-main-color fs-2 fw-bold">Home Buying Made Simple</h3>
+                                    <p class="third-main-color fs-5 fw-normal">Our expert team guides you through every
+                                        step of the home buying process, from
+                                        initial search to closing day.</p>
+                                </div>
+
+                                <div class="financial-planning">
+                                    <div class="negotiation d-flex mb-4 gap-4 ">
+                                        <div class="icon-Negotiation support-bg">
+                                            <span> <i class="fa-solid fa-magnifying-glass main-color"></i></span>
+                                        </div>
+
+                                        <div class="Financial-info">
+                                            <h4 class="fourth-main-color fs-5 fw-semibold">Property Search</h4>
+                                            <p class="third-main-color fs-6 fw-normal">Access exclusive listings and get
+                                                notified of new properties that match
+                                                your criteria.</p>
+                                        </div>
+                                    </div>
+                                    <div class="negotiation d-flex mb-4 gap-4 ">
+                                        <div class="icon-Negotiation support-bg">
+                                            <span> <i class="fa-solid fa-calculator main-color"></i></span>
+                                        </div>
+
+                                        <div class="Financial-info">
+                                            <h4 class="fourth-main-color fs-5 fw-semibold">Financial Planning</h4>
+                                            <p class="third-main-color fs-6 fw-normal">Get pre-approved for mortgages
+                                                and understand your budget with our financial experts.</p>
+                                        </div>
+                                    </div>
+                                    <div class="negotiation d-flex mb-4 gap-4 ">
+                                        <div class="icon-Negotiation support-bg">
+                                            <span> <i class="fa-solid fa-handshake main-color"></i></span>
+                                        </div>
+
+                                        <div class="Financial-info">
+                                            <h4 class="fourth-main-color fs-5 fw-semibold">Negotiation Support</h4>
+                                            <p class="third-main-color fs-6 fw-normal">Negotiation Support
+                                                Our skilled negotiators ensure you get the best possible deal on your
+                                                dream home.</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="home-search">
+                                        <button class="btn main-bg mt-3 text-light py-3 px-5 fs-6 fw-semibold">Start
+                                            Your
+                                            Search</button>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="inner">
+                                <div class="home-image position-relative">
+                                    <img class="w-100 rounded-4 shadow-lg" src="./images/service-img-1 (1).png"
+                                        alt="Home Buying">
+                                    <div class="bg-white total support-dream shadow-lg  p-4 rounded-3">
+                                        <div class="main-color fs-4 fw-bold">98%</div>
+                                        <div class="third-main-color fs-6 fw-normal">Success Rate</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="tab-pane fade" id="pills-Selling" role="tabpanel" aria-labelledby="pills-Selling-tab"
+                    tabindex="0">
+
+
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="inner">
+
+                                <div class="home-heading mb-4">
+                                    <h3 class="fourth-main-color fs-2 fw-bold">Maximize Your Home's Value</h3>
+                                    <p class="third-main-color fs-5 fw-normal">Sell your property quickly and for the
+                                        best price with our comprehensive marketing strategy and expert guidance.
+                                    </p>
+                                </div>
+
+                                <div class="financial-planning">
+                                    <div class="negotiation d-flex mb-4 gap-4 ">
+                                        <div class="icon-Negotiation market-bg">
+                                            <span> <i class="fa-solid fa-chart-line" style="color: #00a63e;"></i></span>
+                                        </div>
+
+                                        <div class="Financial-info">
+                                            <h4 class="fourth-main-color fs-5 fw-semibold">Market Analysis</h4>
+                                            <p class="third-main-color fs-6 fw-normal">Get a comprehensive market
+                                                analysis to price your home competitively.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="negotiation d-flex mb-4 gap-4 ">
+                                        <div class="icon-Negotiation market-bg">
+                                            <span> <i class="fa-solid fa-camera" style="color:  #00a63e;"></i></span>
+                                        </div>
+
+                                        <div class="Financial-info">
+                                            <h4 class="fourth-main-color fs-5 fw-semibold">Professional Marketing</h4>
+                                            <p class="third-main-color fs-6 fw-normal">High-quality photography, virtual
+                                                tours, and multi-channel marketing campaigns.</p>
+                                        </div>
+                                    </div>
+                                    <div class="negotiation d-flex mb-4 gap-4 ">
+                                        <div class="icon-Negotiation market-bg">
+                                            <span> <i class="fa-solid fa-users" style="color:  #00a63e;"></i></span>
+                                        </div>
+
+                                        <div class="Financial-info">
+                                            <h4 class="fourth-main-color fs-5 fw-semibold">Buyer Screening</h4>
+                                            <p class="third-main-color fs-6 fw-normal">We pre-qualify buyers to ensure
+                                                serious inquiries and smooth transactions.</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="home-search">
+                                        <button class="btn market-btn text-light mt-3 py-3 px-5 fs-6 fw-semibold"> Get
+                                            Home Valuation</button>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="inner">
+                                <div class="home-image position-relative">
+                                    <img class="w-100 rounded-4 shadow-lg" src="./images/service-img-2.png"
+                                        alt="Home Buying">
+                                    <div class="bg-white market-sell total shadow-lg  p-4 rounded-3">
+                                        <div class="market-days fs-4 fw-bold">21 days</div>
+                                        <div class="third-main-color fs-6 fw-normal">Avg. Time to Sell</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+                <div class="tab-pane fade" id="pills-Renting" role="tabpanel" aria-labelledby="pills-Renting-tab"
+                    tabindex="0">
+
+
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="inner">
+
+                                <div class="home-heading mb-4">
+                                    <h3 class="fourth-main-color fs-2 fw-bold">Premium Rental Properties</h3>
+                                    <p class="third-main-color fs-5 fw-normal">Find your perfect rental home with our
+                                        extensive portfolio of quality properties and personalized service.</p>
+                                </div>
+
+                                <div class="financial-planning">
+                                    <div class="negotiation d-flex mb-4  gap-4 ">
+                                        <div class="icon-Negotiation support-bg">
+                                            <span> <i class="fa-solid fa-map-location-dot main-color"></i></span>
+                                        </div>
+
+                                        <div class="Financial-info">
+                                            <h4 class="fourth-main-color fs-5 fw-semibold">Prime Locations</h4>
+                                            <p class="third-main-color fs-6 fw-normal">Access rentals in the most
+                                                desirable neighborhoods and communities.</p>
+                                        </div>
+                                    </div>
+                                    <div class="negotiation d-flex mb-4 gap-4 ">
+                                        <div class="icon-Negotiation support-bg">
+                                            <span> <i class="fa-solid fa-shield-halved main-color"></i></span>
+                                        </div>
+
+                                        <div class="Financial-info">
+                                            <h4 class="fourth-main-color fs-5 fw-semibold">Verified Properties</h4>
+                                            <p class="third-main-color fs-6 fw-normal">All our rental properties are
+                                                thoroughly inspected and verified for quality.</p>
+                                        </div>
+                                    </div>
+                                    <div class="negotiation d-flex mb-4 gap-4 ">
+                                        <div class="icon-Negotiation support-bg">
+                                            <span> <i class="fa-solid fa-screwdriver-wrench main-color"></i></span>
+                                        </div>
+
+                                        <div class="Financial-info">
+                                            <h4 class="fourth-main-color fs-5 fw-semibold">24/7 Support</h4>
+                                            <p class="third-main-color fs-6 fw-normal">Round-the-clock maintenance and
+                                                tenant support services.</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="home-search">
+                                        <button class="btn main-bg mt-3 text-light py-3 px-5 fs-6 fw-semibold"> Browse
+                                            Rentals
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="inner">
+                                <div class="home-image position-relative">
+                                    <img class="w-100 rounded-4 shadow-lg" src="./images/service-img-3.png"
+                                        alt="Home Buying">
+                                    <div class="bg-white total support-dream shadow-lg  p-4 rounded-3">
+                                        <div class="main-color fs-4 fw-bold">5,000+</div>
+                                        <div class="third-main-color fs-6 fw-normal">Available Rentals</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+                <div class="tab-pane fade" id="pills-Investing" role="tabpanel" aria-labelledby="pills-Investing-tab"
+                    tabindex="0">
+
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="inner">
+
+                                <div class="home-heading mb-4">
+                                    <h3 class="fourth-main-color fs-2 fw-bold">Real Estate Investment</h3>
+                                    <p class="third-main-color fs-5 fw-normal">Build wealth through strategic real
+                                        estate investments with our expert guidance and market insights.
+                                    </p>
+                                </div>
+
+                                <div class="financial-planning">
+                                    <div class="negotiation d-flex mb-4 gap-4 ">
+                                        <div class="icon-Negotiation portfolio-bg">
+                                            <span> <i class="fa-solid fa-chart-pie" style="color: #d08700;"></i></span>
+                                        </div>
+
+                                        <div class="Financial-info">
+                                            <h4 class="fourth-main-color fs-5 fw-semibold">Portfolio Analysis</h4>
+                                            <p class="third-main-color fs-6 fw-normal">Comprehensive analysis of
+                                                investment opportunities and portfolio optimization.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="negotiation d-flex mb-4 gap-4 ">
+                                        <div class="icon-Negotiation portfolio-bg">
+                                            <span> <i class="fa-solid fa-money-bill-wave"
+                                                    style="color: #d08700;"></i></span>
+                                        </div>
+
+                                        <div class="Financial-info">
+                                            <h4 class="fourth-main-color fs-5 fw-semibold">ROI Projections</h4>
+                                            <p class="third-main-color fs-6 fw-normal">Detailed return on investment
+                                                calculations and market forecasting.</p>
+                                        </div>
+                                    </div>
+                                    <div class="negotiation d-flex mb-4 gap-4 ">
+                                        <div class="icon-Negotiation portfolio-bg">
+                                            <span> <i class="fa-solid fa-gear" style="color: #d08700;"></i></span>
+                                        </div>
+
+                                        <div class="Financial-info">
+                                            <h4 class="fourth-main-color fs-5 fw-semibold">Property Management</h4>
+                                            <p class="third-main-color fs-6 fw-normal">Full-service property management
+                                                for hands-off investment experience.</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="home-search ">
+                                        <button class="btn explore-btn text-light mt-3 py-3 px-5 fs-6 fw-semibold">
+                                            Explore Investments
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="inner">
+                                <div class="home-image position-relative">
+                                    <img class="w-100 rounded-4 shadow-lg" src="./images/service-img-4 .png"
+                                        alt="Home Buying">
+                                    <div class="bg-white market-sell total shadow-lg  p-4 rounded-3">
+                                        <div class="portfolio-color fs-4 fw-bold">15%</div>
+                                        <div class="third-main-color fs-6 fw-normal">Avg. Annual ROI</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <div class="tab-pane fade" id="pills-Commercial" role="tabpanel" aria-labelledby="pills-Commercial-tab"
+                    tabindex="0">
+
+
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="inner">
+
+                                <div class="home-heading mb-4">
+                                    <h3 class="fourth-main-color fs-2 fw-bold">Commercial Real Estate</h3>
+                                    <p class="third-main-color fs-5 fw-normal">Expert commercial real estate services
+                                        for businesses, investors, and developers.</p>
+                                </div>
+
+                                <div class="financial-planning">
+                                    <div class="negotiation d-flex mb-3 gap-4 ">
+                                        <div class="icon-Negotiation office-bg">
+                                            <span> <i class="fa-solid fa-building" style="color: #4f39f6;"></i></span>
+                                        </div>
+
+                                        <div class="Financial-info">
+                                            <h4 class="fourth-main-color fs-5 fw-semibold">Office Spaces</h4>
+                                            <p class="third-main-color fs-6 fw-normal">Prime office locations for
+                                                businesses of all sizes and industries.</p>
+                                        </div>
+                                    </div>
+                                    <div class="negotiation d-flex mb-3 gap-4 ">
+                                        <div class="icon-Negotiation office-bg">
+                                            <span> <i class="fa-solid fa-warehouse" style="color: #4f39f6;"></i></span>
+                                        </div>
+
+                                        <div class="Financial-info">
+                                            <h4 class="fourth-main-color fs-5 fw-semibold">Industrial Properties</h4>
+                                            <p class="third-main-color fs-6 fw-normal">Warehouses, manufacturing
+                                                facilities, and distribution centers.</p>
+                                        </div>
+                                    </div>
+                                    <div class="negotiation d-flex mb-3 gap-4  ">
+                                        <div class="icon-Negotiation office-bg">
+                                            <span> <i class="fa-solid fa-store" style="color: #4f39f6;"></i></span>
+                                        </div>
+
+                                        <div class="Financial-info">
+                                            <h4 class="fourth-main-color fs-5 fw-semibold">Retail Spaces</h4>
+                                            <p class="third-main-color fs-6 fw-normal">Retail Spaces
+                                                High-traffic retail locations and shopping center opportunities.</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="home-search">
+                                        <button class="btn Office-btn mt-3 text-light py-3 px-5 fs-6 fw-semibold">
+                                            View Commercial Properties
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="inner">
+                                <div class="home-image position-relative">
+                                    <img class="w-100 rounded-4 shadow-lg" src="./images/service-img-5.png"
+                                        alt="Home Buying">
+                                    <div class="bg-white total support-dream shadow-lg  p-4 rounded-3">
+                                        <div class="office-color fs-4 fw-bold">$2.5B</div>
+                                        <div class="third-main-color fs-6 fw-normal">Commercial Volume</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Services-section -->
+
+
+    <!-- start Clients-section  -->
+    <section class="Clients  p-lg-4  second-main-bg">
+
+        <div class="container py-5">
+            <div class=" text-center d-flex justify-content-center">
+                <span class="position-relative  Premium-pill pill-orange fw-bold fs-6 bg-light  px-4 py-2 rounded-5">
+                    Client Stories</span>
+            </div>
+            <div class="Premium-heading text-center mt-4 mb-2 pb-5">
+                <h2 class="h1 fw-bolder text-light lh-lg">
+                    What Our Clients Say
+
+                </h2>
+                <p class=" lead mx-auto  client-color mb-4">Hear from satisfied homeowners who found their dream
+                    properties with EliteHomes
+                </p>
+            </div>
+
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner rounded-4 shadow-lg bg-white py-4  mx-auto  px-4 py-3 ">
+                    <div class="carousel-item active" data-bs-interval="1000">
+
+                        <div class="Client-Stories">
+
+                            <div class="Client-icon d-flex gap-3">
+                                <div>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                </div>
+                                <div>
+                                    <span class="fs-6 fw-normal third-main-color">5.0 out of 5</span>
+                                </div>
+                            </div>
+
+                            <div class="Client-paragraph mt-4">
+                                <p class="fs-5 fw-normal lh-lg">"EliteHomes made our home buying experience absolutely
+                                    seamless. Sarah and her team went above and beyond to help us find the perfect
+                                    family home in Beverly Hills. Their market knowledge and negotiation skills saved us
+                                    over $100,000 on our purchase. We couldn't be happier!"</p>
+                            </div>
+                            <div class="Client-profile mt-5 d-flex align-items-center gap-3">
+                                <div class="client-image">
+                                    <img class=" rounded-circle" src="./images/avatar-8 (1).jpg"
+                                        alt="Jennifer & Mark Thompson">
+                                </div>
+                                <div class="Client-profile-info">
+                                    <h4 class="mb-1 fw-bold fourth-main-color fs-5 lh-sm">Jennifer & Mark Thompson</h4>
+                                    <p class="mb-1 fw-normal third-main-color fs-6 lh-sm">Beverly Hills Homeowners</p>
+                                    <p class="mb-0 fw-normal third-main-color fs-6 lh-sm">Purchased $2.8M Family Estate
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <div class="Client-Stories">
+
+                            <div class="Client-icon d-flex gap-3">
+                                <div>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                </div>
+                                <div>
+                                    <span class="fs-6 fw-normal third-main-color">5.0 out of 5</span>
+                                </div>
+                            </div>
+
+                            <div class="Client-paragraph mt-4">
+                                <p class="fs-5 fw-normal lh-lg">"As first-time investors, we were nervous about entering
+                                    the real estate market. The
+                                    EliteHomes investment team provided incredible guidance and helped us build a
+                                    portfolio that's already generating 18% annual returns. Their expertise is
+                                    unmatched."</p>
+                            </div>
+                            <div class="Client-profile mt-5 d-flex align-items-center gap-3">
+                                <div class="client-image">
+                                    <img class=" rounded-circle" src="./images/avatar-1.jpg" alt="David Rodriguez">
+                                </div>
+                                <div class="Client-profile-info">
+                                    <h4 class="mb-1 fw-bold fourth-main-color fs-5 lh-sm">David Rodriguez</h4>
+                                    <p class="mb-1 fw-normal third-main-color fs-6 lh-sm">Real Estate Investor</p>
+                                    <p class="mb-0 fw-normal third-main-color fs-6 lh-sm">$1.2M Investment Portfolio</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <div class="Client-Stories">
+
+                            <div class="Client-icon d-flex gap-3">
+                                <div>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                </div>
+                                <div>
+                                    <span class="fs-6 fw-normal third-main-color">5.0 out of 5</span>
+                                </div>
+                            </div>
+
+                            <div class="Client-paragraph mt-4">
+                                <p class="fs-5 fw-normal lh-lg">"Selling our Manhattan penthouse was stress-free thanks
+                                    to EliteHomes. They marketed it beautifully, brought qualified buyers, and we sold
+                                    for 15% above asking price in just 10 days. Their professional photography and
+                                    staging made all the difference."</p>
+                            </div>
+                            <div class="Client-profile mt-5 d-flex align-items-center gap-3">
+                                <div class="client-image">
+                                    <img class=" rounded-circle" src="./images/avatar-7 (2).jpg" alt="Amanda Chen">
+                                </div>
+                                <div class="Client-profile-info">
+                                    <h4 class="mb-1 fw-bold fourth-main-color fs-5 lh-sm">Amanda Chen</h4>
+                                    <p class="mb-1 fw-normal third-main-color fs-6 lh-sm">Manhattan Seller</p>
+                                    <p class="mb-0 fw-normal third-main-color fs-6 lh-sm">Sold $3.2M Penthouse</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <div class="Client-Stories">
+
+                            <div class="Client-icon d-flex gap-3">
+                                <div>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: rgb(255, 212, 59);"></i></span>
+                                </div>
+                                <div>
+                                    <span class="fs-6 fw-normal third-main-color">5.0 out of 5</span>
+                                </div>
+                            </div>
+
+                            <div class="Client-paragraph mt-4">
+                                <p class="fs-5 fw-normal lh-lg">"Our company needed to relocate to a larger office space
+                                    quickly. EliteHomes' commercial team found us the perfect building in downtown
+                                    Austin with flexible lease terms and great amenities. They handled everything
+                                    professionally and efficiently."</p>
+                            </div>
+                            <div class="Client-profile mt-5 d-flex align-items-center gap-3">
+                                <div class="client-image">
+                                    <img class=" rounded-circle" src="./images/avatar-3.jpg" alt="Michael Foster">
+                                </div>
+                                <div class="Client-profile-info">
+                                    <h4 class="mb-1 fw-bold fourth-main-color fs-5 lh-sm">Michael Foster</h4>
+                                    <p class="mb-1 fw-normal third-main-color fs-6 lh-sm">CEO, TechStart Inc.</p>
+                                    <p class="mb-0 fw-normal third-main-color fs-6 lh-sm">15,000 sq ft Office Lease</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="carousel-indicators mt-5  position-static position-relative">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active  " aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+
+                </div>
+                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon " aria-hidden="true">
+
+                    </span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- End Clients-section -->
+
+    <!-- start Questions-section   -->
+    <section class="Questions p-lg-4  questions-bg">
+
+        <div class="container py-5">
+            <div class=" text-center d-flex justify-content-center">
+                <span class="position-relative  Premium-pill fw-bold fs-6 bg-light  px-4 py-2 rounded-5">
+                    Help Center</span>
+            </div>
+            <div class="Premium-heading text-center mt-4 mb-2 pb-5">
+                <h2 class="h1 fw-bolder main-color lh-lg">
+                    Frequently Asked Questions
+
+                </h2>
+                <p class=" lead mx-auto   mb-4">Get answers to the most common questions about buying,
+                    selling, and investing in real estate
+                </p>
+            </div>
+
+            <div class="accordion accordion-Questions  accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item  shadow-lg-question rounded-4 mb-4">
+                    <h2 class="accordion-header " id="flush-headingOne">
+                        <button
+                            class="accordion-button fs-5 fw-semibold rounded-4 py-4   accordion-button-Questions  collapsed "
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                            aria-expanded="false" aria-controls="flush-collapseOne">
+                            How do I know if I'm ready to buy a home?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body  lh-base fs-6 fw-normal ">
+                            You're ready to buy a home when you have stable income, a good
+                            credit score (typically 620+), a down payment saved (usually
+                            10-20% of the home price), and you plan to stay in the area for
+                            at least 3-5 years. Our team can help assess your financial
+                            readiness and connect you with mortgage pre-approval services.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item shadow-lg-question rounded-4  mb-4">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button
+                            class="accordion-button fs-5 fw-semibold rounded-4 py-4 accordion-button-Questions collapsed"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                            What's the best time of year to sell my home?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body  lh-base fs-6 fw-normal">Spring and early summer (March through June)
+                            are
+                            traditionally
+                            the best times to sell, as buyers are more active and homes show
+                            better with good weather. However, market conditions, local
+                            factors, and your personal timeline are more important than the
+                            season. We can help you determine the optimal timing based on
+                            current market conditions in your area.</div>
+                    </div>
+                </div>
+                <div class="accordion-item shadow-lg-question rounded-4  mb-4">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button
+                            class="accordion-button fs-5 fw-semibold rounded-4 py-4 accordion-button-Questions collapsed"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                            aria-expanded="false" aria-controls="flush-collapseThree">
+                            How much should I offer on a house?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body  lh-base fs-6 fw-normal"> Your offer should be based on comparable
+                            sales in
+                            the area, the
+                            home's condition, current market conditions, and your budget. In
+                            competitive markets, you might need to offer at or above asking
+                            price. Our agents will provide a detailed comparative market
+                            analysis (CMA) to help you make a competitive yet reasonable
+                            offer.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item shadow-lg-question rounded-4  mb-4">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button
+                            class="accordion-button fs-5 fw-semibold rounded-4 py-4 accordion-button-Questions collapsed"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                            aria-expanded="false" aria-controls="flush-collapseFour">
+                            What are closing costs and who pays them?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body  lh-base fs-6 fw-normal">Closing costs typically range from 2-5% of
+                            the home's
+                            purchase price and include fees for loan origination, appraisal, title insurance, attorney
+                            fees, and taxes. Both buyers and sellers have closing costs, though they vary by location
+                            and can be negotiated. We'll provide a detailed breakdown of expected costs early in the
+                            process.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item shadow-lg-question rounded-4  mb-4">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button
+                            class="accordion-button fs-5 fw-semibold rounded-4 py-4 accordion-button-Questions collapsed"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                            aria-expanded="false" aria-controls="flush-collapseFive">
+
+                            Should I get a home inspection?
+
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body  lh-base fs-6 fw-normal">Yes, absolutely! A professional home
+                            inspection
+                            typically costs
+                            $300-600 but can save you thousands by identifying potential
+                            issues before you buy. We recommend inspections for all property
+                            types and can connect you with qualified, licensed inspectors in
+                            your area.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item   shadow-lg-question rounded-4  mb-4">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                        <button
+                            class="accordion-button fs-5 fw-semibold rounded-4 py-4 rounded-4 py-4  accordion-button-Questions collapsed"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                            aria-expanded="false" aria-controls="flush-collapseSix">
+
+                            How long does it take to buy or sell a home?
+
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body  lh-base fs-6 fw-normal">For buyers, the process typically takes
+                            30-45 days
+                            from offer
+                            acceptance to closing, though finding the right home can take
+                            weeks or months. For sellers, the average time on market varies
+                            by location and price range, but our properties typically sell
+                            within 28 days. We'll provide realistic timelines based on your
+                            specific situation and local market conditions.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item   shadow-lg-question rounded-4 ">
+                    <h2 class="accordion-header" id="flush-headingSeven">
+                        <button
+                            class="accordion-button fs-5 fw-semibold rounded-4 py-4 accordion-button-Questions collapsed"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                            aria-expanded="false" aria-controls="flush-collapseSeven">
+
+                            What makes EliteHomes different from other real estate companies?
+
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body   lh-base fs-6 fw-normal ">
+                            We combine cutting-edge technology with personalized service,
+                            offering virtual tours, AI-powered property matching,
+                            comprehensive market analytics, and a dedicated team of experts
+                            for each client. Our 98% client satisfaction rate and average
+                            21-day selling time speak to our commitment to excellence and
+                            results.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- End Questions-section   -->
+
+
+
+    <!-- start Contact-section -->
+    <section class="Contact p-lg-5 bg-white">
+
+        <div class="container py-5">
+            <div class=" text-center d-flex justify-content-center">
+                <span class="position-relative  Premium-pill fw-bold fs-6 bg-light  px-4 py-2 rounded-5">
+                    Contact Us</span>
+            </div>
+            <div class="Premium-heading text-center mt-4">
+                <h2 class="h1 fw-bolder main-color lh-lg">Get In
+                    <span class="gradient-text">Touch</span>
+                </h2>
+                <p class=" lead mx-auto mb-4">Ready to start your real estate journey? Our expert team is here to help
+                    you every step of the way
+                </p>
+            </div>
+
+            <div class="row g-4 mt-5">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-inner call-us  p-4 rounded-4 py-4">
+                        <div
+                            class="contact-icon mb-4 phone-icon-bg  py-4  d-flex justify-content-center align-items-center">
+                            <span class="fs-4 "> <i class="fa-solid fa-phone text-light"></i></span>
+                        </div>
+
+                        <div class="contact-info">
+                            <h3 class="fourth-main-color fw-bold fs-5 mb-3">Call Us</h3>
+                            <p class=" third-main-color fs-6 fw-normal mb-3">Mon-Fri from 8am to 5pm</p>
+                            <a class=" text-decoration-none  phone-color fs-6 fw-semibold" href="tel:+15551234567">+1
+                                (555) 123-4567</a>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-inner email-us p-4 rounded-4 py-4">
+                        <div
+                            class="contact-icon mb-4 email-icon-bg  py-4  d-flex justify-content-center align-items-center">
+                            <span class="fs-4 "> <i class="fa-solid fa-envelope text-light"></i></span>
+                        </div>
+
+                        <div class="contact-info">
+                            <h3 class="fourth-main-color fw-bold fs-5 mb-3">Email Us</h3>
+                            <p class=" third-main-color fs-6 fw-normal mb-3">We'll respond within 24hrs</p>
+                            <a class=" text-decoration-none email-color fs-6 fw-semibold"
+                                href="mailto:info@elitehomes.com">info@elitehomes.com</a>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-inner visit-us p-4 rounded-4 py-4">
+                        <div
+                            class="contact-icon  mb-4 location-icon-bg  py-4  d-flex justify-content-center align-items-center">
+                            <span class="fs-4 "> <i class="fa-solid fa-location-dot text-light"></i></span>
+                        </div>
+
+                        <div class="contact-info">
+                            <h3 class="fourth-main-color fw-bold fs-5 mb-3">Visit Usge</h3>
+                            <p class=" third-main-color fs-6 fw-normal mb-3">Come say hello</p>
+                            <span class="location-color fs-6 fw-semibold">Beverly Hills, CA</span>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="contact-inner chat-us  p-4 rounded-4 py-4">
+                        <div
+                            class="contact-icon mb-4 chatting-icon-bg py-4  d-flex justify-content-center align-items-center">
+                            <span class="fs-4 "> <i class="fa-solid fa-comments text-light"></i></span>
+                        </div>
+
+                        <div class="contact-info">
+                            <h3 class="fourth-main-color fw-bold fs-5 mb-3">Call Us</h3>
+                            <p class=" third-main-color fs-6 fw-normal mb-3">Mon-Fri from 8am to 5pm</p>
+                            <span class="chatting-color fs-6 fw-semibold">Start chatting →</span>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+    <!--End Contact-section  -->
 
     <!-- bootstrap-link -->
     <script src="./js/bootstrap.bundle.min.js"></script>

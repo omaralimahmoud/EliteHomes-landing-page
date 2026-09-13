@@ -1,7 +1,7 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
-   /* start navbar */
+    /* start navbar */
     .navbar-nav .nav-link:hover::after {
         transform: scaleX(0);
         -webkit-transform: scaleX(0);
@@ -18,15 +18,26 @@
         -ms-transform: scaleX(0);
         -o-transform: scaleX(0);
     }
-   /* End navbar */
+
+    /* End navbar */
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+
+    /* start Questions-section  */
+    .accordion-item {
+        width: 80%;
+        margin: auto;
+    }
+
+    /* End Questions-section  */
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-     /* Start navbar */
+
+    /* Start navbar */
     .navbar-nav .nav-link:hover::after {
         transform: scaleX(1);
         -webkit-transform: scaleX(1);
@@ -43,6 +54,7 @@
         -ms-transform: scaleX(1);
         -o-transform: scaleX(1);
     }
+
     /* End navbar */
     /*  Start header */
     .header-heading {
@@ -63,7 +75,14 @@
         margin-inline: auto;
     }
 
-   /* End  header */
+    /* End  header */
+
+    /* start Clients-section */
+    .carousel-inner {
+        width: 80%;
+    }
+
+    /* End Clients-section */
 }
 
 /* X-Large devices (large desktops, 1200px and up) */

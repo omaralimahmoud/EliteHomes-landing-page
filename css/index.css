@@ -17,12 +17,32 @@ body::selection {
 :root {
     --second-main-color: white;
     --main-bg: #871FFD;
+    --second-main-bg: #4d179a;
     --main-color: #7f22fe;
-    --bg-white: white
+    --bg-white: white;
+    --third-main-color: #4a5565;
+    --fourth-main-color: #101828;
+    --questions-bg: #F9FAFB;
+}
+
+.questions-bg {
+    background-color: var(--questions-bg);
+}
+
+.second-main-bg {
+    background-color: var(--second-main-bg);
 }
 
 .second-main-color {
     color: var(--second-main-color);
+}
+
+.third-main-color {
+    color: var(--third-main-color);
+}
+
+.fourth-main-color {
+    color: var(--fourth-main-color);
 }
 
 .bg-white {
@@ -129,12 +149,12 @@ header {
 }
 
 .Premium-pill::before {
-    left: -45%;
+    left: -100px;
     background: linear-gradient(to right, transparent, #7f22fe 70%);
 }
 
 .Premium-pill::after {
-    right: -45%;
+    right: -100px;
     background: linear-gradient(to left, transparent, #7f22fe 70%);
 }
 
@@ -258,3 +278,347 @@ header {
 }
 
 /* End Premium Collection */
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* start Services-section */
+.home-image img {
+    height: 384px;
+    object-fit: cover;
+}
+
+.total,
+.market-sell {
+    position: absolute;
+    bottom: -20px;
+}
+
+.support-dream {
+    left: -20px;
+}
+
+.market-sell {
+    right: -20px;
+}
+
+.market-days {
+    color: #00a63e;
+}
+
+.icon-Negotiation {
+    width: 40px;
+    height: 50px;
+    padding-inline: .5rem;
+    padding-block: .3125rem;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.support-bg {
+    background-color: #ede9fe;
+}
+
+.market-bg {
+    background-color: #dcfce7;
+}
+
+.market-btn {
+    background-color: #00a63e;
+}
+
+.market-btn:hover {
+    background-color: #008236;
+}
+
+.portfolio-bg {
+    background-color: #fef9c2;
+}
+
+.portfolio-color {
+    color: #d08700;
+}
+
+.explore-btn {
+    background-color: #d08700;
+}
+
+.explore-btn:hover {
+    background-color: #a65f00;
+}
+
+.office-bg {
+    background-color: #e0e7ff;
+}
+
+.Office-btn {
+    background-color: #4f39f6;
+}
+
+.Office-btn:hover {
+    background-color: #432dd7;
+}
+
+.office-color {
+    color: #4f39f6;
+}
+
+/* End Services-section */
+
+/*  start Clients-section */
+.Premium-heading .client-color {
+    color: #ddd6ff;
+}
+
+.Premium-pill.pill-orange::before {
+    left: -60%;
+    background: linear-gradient(to right, transparent, #fe9a00 70%);
+}
+
+.Premium-pill.pill-orange::after {
+    right: -60%;
+    background: linear-gradient(to left, transparent, #fe9a00 70%);
+}
+
+.client-image img {
+    width: 80px;
+    height: 80px;
+}
+
+.Client-paragraph {
+    color: #364153;
+}
+
+.carousel-indicators button {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    filter: invert(0);
+    border-radius: 50%;
+    background-color: #fff3;
+    background-repeat: no-repeat;
+    transition: background-color 0.3s;
+    background-position: center;
+    background-size: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    -webkit-filter: invert(0);
+}
+
+.carousel-control-next-icon:hover,
+.carousel-control-prev-icon:hover {
+    background-color: #ffffff4d;
+    filter: invert(0);
+    -webkit-filter: invert(0);
+}
+
+.carousel-control-prev {
+    left: -50px;
+}
+
+.carousel-control-next {
+    right: -50px;
+}
+
+/* End Clients-section */
+/* ------------------------------------------------------------------------- */
+
+/* start Questions-section   */
+.accordion-Questions {
+    --bs-accordion-bg: #fff;
+    --bs-accordion-transition: none --bs-accordion-border-color: none;
+    --bs-accordion-border-width: none;
+    --bs-accordion-border-radius: none;
+    --bs-accordion-inner-border-radius: calc(0.375rem - 1px);
+    --bs-accordion-btn-padding-x: 1.25rem;
+    --bs-accordion-btn-padding-y: 1rem;
+    --bs-accordion-btn-color: var(--third-main-color);
+    --bs-accordion-btn-bg: var(--bs-accordion-bg);
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-icon-width: 1.25rem;
+    --bs-accordion-btn-icon-transform: rotate(-180deg);
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-body-padding-x: 1.25rem;
+    --bs-accordion-body-padding-y: 1rem;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236a7282'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+
+
+
+.accordion-button-Questions {
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+
+.accordion-button-Questions:not(.collapsed) {
+    color: var(--third-main-color);
+    background-color: var(--bg-white);
+    box-shadow: none;
+}
+
+.accordion-button-Questions:hover {
+    background-color: var(--questions-bg);
+}
+
+.accordion-item {
+    color: var(--fourth-main-color);
+    background-color: var(--bs-accordion-bg);
+    border: none;
+}
+
+
+.shadow-lg-question {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+/* End Questions-section */
+/* start contact-section */
+.contact-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
+
+.phone-icon-bg {
+    background-color: #7f22fe;
+}
+
+.email-icon-bg {
+    background-color: #9810fa;
+}
+
+.location-icon-bg {
+    background: linear-gradient(to bottom right, #e12afb, #fe9a00);
+}
+
+.chatting-icon-bg {
+    background-color: #615fff;
+}
+
+.contact-inner {
+    border: 2px solid #f6f3f4;
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
+
+.contact-inner:hover.call-us {
+    border: 2px solid #c4b4ff;
+}
+
+.contact-inner:hover.email-us {
+    border: 2px solid #dab2ff;
+}
+
+.contact-inner:hover.visit-us {
+    border: 2px solid #f4a8ff;
+}
+
+.contact-inner:hover.chat-us {
+    border: 2px solid #a3b3ff;
+}
+
+.contact-inner:hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
+
+.contact-inner:hover .contact-icon {
+    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+}
+
+.phone-color {
+    color: #7f22fe;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+.phone-color:hover {
+    color: #7008e7;
+}
+
+.email-color {
+    color: #9810fa;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+
+.email-color:hover {
+    color: #8200db;
+}
+
+.location-color {
+    color: #e60076;
+}
+
+.chatting-color {
+    color: #4f39f6;
+}
+
+.chatting-color:hover {
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    color: #432dd7;
+}
+
+/* End contact-section */
